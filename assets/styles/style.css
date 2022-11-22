@@ -1,0 +1,47 @@
+/* ***** GENERAL ***** */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+/* ***** HEADER & FOOTER ***** */
+.header, .footer {
+  background-color: #411336;
+}
+
+.header {
+  height: 100px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer {
+  height: 150px;
+}
+
+
+
+/* ***** MAIN ***** */
+.main {
+  background-color: #0C150E;
+}
+
+.k-container {
+  max-width: 1400px;
+  padding: 50px 70px;
+}
+
+.article {
+  background-image: url("../images/parchment.webp");
+}
