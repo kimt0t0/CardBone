@@ -42,11 +42,11 @@ a {
   text-decoration: none;
 }
 
-.page-anchor:hover, .page-anchor:focus {
+.page-anchor:hover, .page-anchor:focus, .classic-link:hover, .classic-link:focus {
   text-decoration: underline;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6, p, li {
   color: var(--primary-darker);
 }
 
@@ -288,6 +288,13 @@ h1, h2, h3, h4, h5, h6, p {
 
 .rules-list, .rle-list {
   margin-left: 50px;
+}
+
+.glossary-list {
+  padding-left: 30px;
+}
+.gl-elt {
+  margin-top: 30px;
 }
 
 
