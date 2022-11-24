@@ -42,8 +42,29 @@ a {
   text-decoration: none;
 }
 
+.page-anchor:hover, .page-anchor:focus {
+  text-decoration: underline;
+}
+
 h1, h2, h3, h4, h5, h6, p {
   color: var(--primary-darker);
+}
+
+.subtitle-displayer {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title-sec-displayer {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.title-sec {
+  max-width: 95%;
 }
 
 .txt {
@@ -52,8 +73,22 @@ h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
 
+.txt-small {
+  font-size: 12px;
+  line-height: 1;
+  margin: 0;
+}
+
+.txt-big {
+  font-size: 20px;
+}
+
 .txt-bold {
   font-weight: 600;
+}
+
+.txt-italic {
+  font-style: italic;
 }
 
 .txt-upper {
@@ -205,9 +240,54 @@ h1, h2, h3, h4, h5, h6, p {
   background-position: bottom left;
 }
 
+.rules-list.__withimg {
+  background: url('../images/flower-right.png') no-repeat;
+  background-position: center right;
+  margin-right: -10px;
+}
+
 .rp-img-ctn {
   display: flex;
   justify-content: flex-end;
+}
+
+.age-limit {
+  font-size: 30px;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  background-color: var(--secondary-darker);
+  color: var(--secondary-lighter);
+}
+
+.headpage-link {
+  width: 40px;
+  height: 40px;
+  border: 1 px solid transparent;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-color: var(--primary-darker);
+  color: var(--primary-lighter);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 500ms ease-out;
+}
+
+.headpage-link:hover, .headpage-link:focus {
+  transform: scale(1.05);
+  background-color: #7DD892;
+}
+
+.rules-list, .rle-list {
+  margin-left: 50px;
 }
 
 
