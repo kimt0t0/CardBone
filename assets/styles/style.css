@@ -1,7 +1,31 @@
+/* ***** VARIABLES ***** */
+:root {
+  --primary: #7DD892;
+  --primary-darker: #25402b;
+  --primary-lighter: #f2fbf4;
+  --secondary: #82276D;
+  --secondary-darker: #411336;
+  --secondary-lighter: #f2e9f0;
+}
+
+
+
 /* ***** GENERAL ***** */
 * {
   margin: 0;
   padding: 0;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: var(--primary-lighter);
+}
+
+.k-container {
+  max-width: 1400px;
+  padding: 50px 70px;
+  overflow: hidden;
+  white-space: pre-line;
 }
 
 ul, ol {
@@ -12,36 +36,196 @@ a {
   text-decoration: none;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+  color: var(--primary-darker);
+}
 
+.txt {
+  font-size: 16px;
+  line-height: 1;
+  margin: 0;
+}
 
-/* ***** HEADER & FOOTER ***** */
-.header, .footer {
-  background-color: #411336;
+.txt-bold {
+  font-weight: 600;
+}
+
+.txt-upper {
+  text-transform: uppercase;
+}
+
+.txt-center {
+  text-align: center;
 }
 
 .header {
-  height: 100px;
-  padding: 10px;
+  height: 25%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.header-logo {
+  margin: 10px;
+}
+
+.footer {
+  background-color: var(--secondary-darker);
+}
+
+.title-main {
+  font-weight: 200;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.backlink-container {
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.backlink {
+  color: var(--primary-darker);
+  font-size: 18px;
+}
+
+.backlink:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+.backlink-icon {
+  margin-right: 5px;
+}
+
+.illustration {
+  border-radius: 10px;
+}
+
+/* ***** INDEX ***** */
+
+.img-illus-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
-.footer {
-  height: 150px;
+.main-index {
+  height: 40%;
+}
+
+.footer-index {
+  height: 20%;
+}
+
+.navlist-index {
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.navlink-index, .btn-download {
+  box-sizing: border-box;
+  width: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 500ms ease-out;
+}
+
+.navlink-index:hover, .btn-download:hover, .navlink-index:focus, .btn-download:focus {
+  transform: scale(1.1);
+  text-decoration: underline;
+}
+
+.navlink-index {
+  background-color: var(--secondary-lighter);
+  color: var(--secondary-darker);
+  height: 170px;
+  background-image: url('../images/flowers.png');
+  background-size: contain;
+}
+
+.navlink-index:hover, .navlink-index:focus {
+  background-color: var(--secondary);
+  color: var(--secondary-lighter);
+}
+
+.navelt-btn {
+  height: 170px;
+  display: flex;
+  align-items: center;
+}
+
+.btn-download {
+  background-color: var(--primary-darker);
+  color: var(--primary-lighter);
+  height: 60px;
+}
+
+.btn-download:hover, .btn-download:focus {
+  background-color: var(--primary);
+  color: var(--primary-darker);
 }
 
 
-
-/* ***** MAIN ***** */
-.main {
-  background-color: #0C150E;
+/* ***** PAGES' CONTENT ***** */
+.lore-paragraph, .rules-paragraph {
+  box-sizing: border-box;
+  max-width: 800px;
+  background-color:  var(--primary);
+  transform: opacity(0.85);
+  border: 1px var(--primary-darker) solid;
+  border-radius: 10px;
+  padding: 5px 10px;
 }
 
-.k-container {
-  max-width: 1400px;
-  padding: 50px 70px;
+.lore-paragraph {
+  background: url('../images/flower-right.png') no-repeat;
+  background-position: bottom right;
 }
 
-.article {
-  background-image: url("../images/parchment.webp");
+.rules-paragraph {
+  background: url('../images/flower-left.png') no-repeat;
+  background-position: bottom left;
+}
+
+.rp-img-ctn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+/* ********** MEDIA QUERIES ********** */
+
+/* ***** SMALL ***** */
+@media screen and (max-width: 950px) {
+  .title-main {
+    text-align: center;
+  }
+  .navelt {
+    margin: 30px;
+  }
+
+  .lore-paragraph .illustration {
+    width: 100% !important;
+  }
+}
+
+/* ***** XXS ***** */
+@media screen and (max-width: 600px) {
+  .navlist-index {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
