@@ -131,7 +131,6 @@ h1, h2, h3, h4, h5, h6, p, li {
 }
 
 .footer-index {
-  position: absolute;
   bottom: 0;
 }
 
@@ -200,6 +199,7 @@ h1, h2, h3, h4, h5, h6, p, li {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-bottom: 100px;
 }
 
 .navlink-index, .btn-download {
@@ -254,6 +254,14 @@ h1, h2, h3, h4, h5, h6, p, li {
 
 
 /* ***** PAGES' CONTENT ***** */
+.video-container {
+  width: fit-content;
+  display: flex;
+  border: 2px solid var(--secondary-darker);
+  border-radius: 10px;
+  margin: 10px 0 100px;
+}
+
 .lore-paragraph, .rules-paragraph {
   box-sizing: border-box;
   max-width: 800px;
