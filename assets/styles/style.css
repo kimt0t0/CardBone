@@ -47,6 +47,11 @@ a {
   text-decoration: none;
 }
 
+.cameleon-link {
+  color: var(--primary-darker);
+  text-decoration: underline;
+}
+
 .page-anchor:hover, .page-anchor:focus, .classic-link:hover, .classic-link:focus {
   text-decoration: underline;
 }
@@ -353,6 +358,11 @@ h1, h2, h3, h4, h5, h6, p, li {
 
   .txt-footer, .link-footer {
     font-size: 16px;
+  }
+
+  .illustration {
+    width: 95%;
+    height: auto;
   }
 }
 
