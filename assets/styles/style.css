@@ -347,13 +347,25 @@ h1, h2, h3, h4, h5, h6, p, li {
   .title-main {
     text-align: center;
   }
+
   .navelt {
     margin: 30px;
+  }
+
+  .video-container {
+    width: 100%;
+    height: 400px;
+  }
+
+  iframe {
+    width: 100%;
+    height: auto;
   }
 
   .lore-paragraph .illustration {
     width: 100% !important;
   }
+
   .footer {
     height: fit-content;
     padding: 10px;
