@@ -18,14 +18,20 @@
 }
 
 body {
+  min-height: 100vh;
   background-color: var(--primary-lighter);
 }
 
 .k-container {
   max-width: 1400px;
-  padding: 50px 70px;
   overflow: hidden;
   white-space: pre-line;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 50px;
 }
 
 .section-error {
@@ -127,6 +133,7 @@ h1, h2, h3, h4, h5, h6, p, li {
 }
 
 .backlink {
+  margin-left: 50px;
   color: var(--primary-darker);
   font-size: 18px;
 }
@@ -211,6 +218,7 @@ h1, h2, h3, h4, h5, h6, p, li {
   background-color: var(--primary-darker);
   color: var(--primary-lighter);
   height: 60px;
+  margin: 30px 0;
 }
 
 .btn-download:hover, .btn-download:focus {
